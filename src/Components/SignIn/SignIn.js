@@ -1,7 +1,7 @@
 import React from 'react';
 
 class SignIn extends React.Component{
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       signInEmail: '',
@@ -19,7 +19,7 @@ class SignIn extends React.Component{
   onSubmitSignIn = () =>{
     fetch('https://smartfacebot.herokuapp.com/signin', {
       method: 'POST',
-      headers: {
+      headers: { 
         'Content-type': 'application/json'
       },
       body: JSON.stringify({
